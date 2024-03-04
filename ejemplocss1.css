@@ -1,0 +1,72 @@
+body {
+    background-color: lightcyan;
+}
+
+.micolor {
+    color: coral;
+    font-family: sans-serif;
+    font-size: 50px;
+}
+
+#miimagen {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px 15px 30px 50px;
+    border: 2px solid aquamarine;
+    object-fit: cover;
+}
+
+#pseudoelemento {
+    color: indigo;
+    font-size: 50px;
+    font-family: sans-serif;
+}
+
+
+#pseudoelemento::before {
+    content: 'Hola';
+    color: red;
+    font-size: 100px;
+}
+
+#pseudoelemento::selection {
+    background-color: red;
+    color: blue;
+}
+
+#pseudoclase {
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+#pseudoclase:hover {
+    color: pink;
+    font-size: 100px;
+}
+
+#entrada {
+    width: 300px;
+    height: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid gray;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
+
+#entrada:hover {
+    padding-left: 10px;
+}
+
+#entrada:focus {
+    outline: none;
+    border: 1px solid red;
+}
+
+a {
+    color: skyblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 50px;
+}
