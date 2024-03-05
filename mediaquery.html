@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: white;
+    }
+
+    @media (min-width: 500px) {
+        .pangrande {
+            display: block;
+        }
+        .panpque {
+            display: none;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .panpque {
+            display: block;
+            color: red;
+        }
+
+        .contenedor {
+            display: none;
+        }
+
+        .pangrande {
+            display: none;
+        }
+    }
+
+</style>
+<body>
+    <h1 class="pangrande">Hola, esta es mi pantalla grande</h1>
+
+    <h1 class="panpque">Hola, esta es mi pantalla pequeña</h1>
+
+    <div class="contenedor">
+        <h1>Así mismo</h1>
+        <h1>Así mismo</h1>
+        <h1>Así mismo</h1>
+        <h1>Así mismo</h1>
+        <h1>Así mismo</h1>
+    </div>
+</body>
+</html>
