@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Ingresa tu primer número</h2>
+    <input type="number" id="numeroa">
+
+    <h2>Ingresa tu segundo número</h2>
+    <input type="number" id="numerob">
+
+    <button id="suma">Calcular Suma</button>
+
+    <h2>Respuesta:</h2>
+    <h1 id="respuesta"></h1>
+
+    <button id="spamear">Spam</button>
+
+    <script>
+        document.getElementById('suma').addEventListener('click', () => {
+            const numa = document.getElementById('numeroa');
+            const numb = document.getElementById('numerob');
+            const respuesta = document.getElementById('respuesta');
+            
+            let suma = parseFloat(numa.value) + parseFloat(numb.value);
+            respuesta.textContent = suma;
+        });
+    
+        const spam = document.getElementById('spamear');
+    
+        function espamear() {
+            const newElement = document.createElement("h1");
+            newElement.textContent = "Hello world";
+            document.body.appendChild(newElement);
+        }
+    
+        spam.addEventListener('click', espamear);
+    </script>
+</body>
+</html>

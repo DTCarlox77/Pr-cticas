@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="boton">Mi alerta</button>
+
+    <button id="color">Cambiar color a verde</button>
+
+    <script>
+        const boton = document.getElementById('boton');
+
+        function saludar () {
+            alert("Hello world");
+        }
+
+        boton.addEventListener('click', saludar);
+
+        const color = document.getElementById("color");
+
+        color.addEventListener('click', () => {
+
+            if (document.body.style.backgroundColor == 'green') {
+
+                // Modificando estilos de la página y el botón.
+                document.body.style.backgroundColor = 'white';
+                color.style.backgroundColor = 'white';
+                color.style.color = 'black';
+
+                // Modificando el contenido del botón.
+                color.textContent = 'Cambiar color a verde';
+
+            } else {
+                // Modificando estilos de la página y el botón.
+                document.body.style.backgroundColor = 'green';
+                color.style.backgroundColor = 'red';
+                color.style.color = 'lightblue';
+
+                // Modificando el contenido del botón.
+                color.textContent = 'Cambiar color a blanco';
+            }
+
+            
+        });
+    </script>
+</body>
+</html>
